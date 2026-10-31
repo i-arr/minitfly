@@ -1,0 +1,40 @@
+---
+title: Prefix
+description: Change the character(s) that wake up Vynel's commands.
+---
+
+<Frame>
+  <img src="/assets/features/prefix.svg" alt="Prefix" />
+</Frame>
+
+Every command starts with your server's prefix. Prefix sets it to whatever fits your community.
+
+## Setup from the panel
+
+<Steps>
+  <Step title="Open the panel">
+    `{prefix}setup` → **Page 4** → click **Prefix**.
+  </Step>
+  <Step title="Type the new prefix">
+    Enter it in the form and submit — the change is live on the very next command.
+  </Step>
+</Steps>
+
+## With commands
+
+```
+{prefix}prefix <new prefix>    → change the server prefix
+{prefix}prefix                 → show the current prefix
+```
+
+<Tip>
+  Short and unusual works best: `v.`, `!v`, `-`. Avoid plain letters — they collide with commands from other bots.
+</Tip>
+
+<Warning>
+  After changing it, `{prefix}` in these docs means your **new** prefix. If your server has **noprefix** enabled, commands also work without any prefix at all.
+</Warning>
+
+## Reset a forgotten prefix
+
+Only an Administrator or the owner can run the prefix command — if the prefix is lost, run `{prefix}help` to display the current one, or any staff member with Administrator can simply set a new one from Page 4.

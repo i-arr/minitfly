@@ -1,0 +1,45 @@
+---
+title: Jailer
+description: Set the jail role and jail channel used by the jail system.
+---
+
+<Frame>
+  <img src="/assets/features/jailer.svg" alt="Jailer" />
+</Frame>
+
+Vynel's jail system locks rule-breakers into a single visible channel instead of a normal timeout. Jailer tells Vynel **which role jails members** and **which channel is the cell**.
+
+## Setup from the panel
+
+<Steps>
+  <Step title="Open the panel">
+    `{prefix}setup` → **Page 2** → click **Jailer**. Current jail roles and the channel are shown.
+  </Step>
+  <Step title="Add a jailer role">
+    Click **Add**, enter the role that represents "in jail", **Submit**.
+  </Step>
+  <Step title="Set the jail channel">
+    Add the channel members should be moved to while jailed.
+  </Step>
+  <Step title="Remove">
+    Use **Remove** (or the remove modal, which lists current entries by number).
+  </Step>
+</Steps>
+
+## With commands
+
+```
+{prefix}jailer <@role|roleID|rolename>       → register a jail role
+{prefix}jailer add <#channel>                → set the jail channel
+{prefix}jailer remove <@role|roleID|number>  → unregister
+{prefix}jail @user [reason]                  → jail someone
+{prefix}unjail @user                         → release them
+```
+
+<Info>
+  Every jail and unjail action is reviewable with `{prefix}jaillogs` and `{prefix}unjaillogs`, which paginate with buttons so you can see who was jailed, when, and by which staff member.
+</Info>
+
+<Warning>
+  The jail channel should deny **Send Messages, Add Reactions, Read Message History (for non-jailed)** to @everyone, and allow them only to the jail role — that's what makes the cell feel like a cell.
+</Warning>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Vynel">
+  <defs>
+    <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d2d2d"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="lacc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d4c7d6"/>
+      <stop offset="1" stop-color="#8a7f8d"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="128" height="128" rx="30" fill="url(#lbg)"/>
+  <rect x="6" y="6" width="116" height="116" rx="25" fill="none" stroke="url(#lacc)" stroke-opacity="0.5" stroke-width="2"/>
+  <text x="64" y="90" font-family="'Poppins','Segoe UI',sans-serif" font-size="84" font-weight="800" fill="url(#lacc)" text-anchor="middle">V</text>
+</svg>

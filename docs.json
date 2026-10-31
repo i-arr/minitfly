@@ -1,0 +1,115 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Vynel Docs",
+  "logo": {
+    "dark": "/assets/logo.svg",
+    "light": "/assets/logo.svg"
+  },
+  "favicon": "/assets/logo.svg",
+  "colors": {
+    "primary": "#d4c7d6",
+    "light": "#d4c7d6",
+    "dark": "#8a7f8d"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "introduction",
+              "how-to-setup-bot",
+              "how-to-use-bot"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Setup Panel",
+        "groups": [
+          {
+            "group": "Panel",
+            "pages": [
+              "setup/panel",
+              "setup/page-1",
+              "setup/page-2",
+              "setup/page-3",
+              "setup/page-4",
+              "setup/page-5",
+              "setup/page-6",
+              "setup/page-7"
+            ]
+          },
+          {
+            "group": "Page 1 · Automation & Staff",
+            "pages": [
+              "features/autorole",
+              "features/autotag",
+              "features/autoreply",
+              "features/staff-apply"
+            ]
+          },
+          {
+            "group": "Page 2 · Moderation Roles",
+            "pages": [
+              "features/logs",
+              "features/muter",
+              "features/jailer",
+              "features/verificator"
+            ]
+          },
+          {
+            "group": "Page 3 · Support & Server Tools",
+            "pages": [
+              "features/ticket",
+              "features/aliases",
+              "features/clear-setup",
+              "features/clan-manager"
+            ]
+          },
+          {
+            "group": "Page 4 · Levels & Roles",
+            "pages": [
+              "features/level-roles",
+              "features/roles",
+              "features/counter",
+              "features/prefix"
+            ]
+          },
+          {
+            "group": "Page 5 · Notifications & Theme",
+            "pages": [
+              "features/welcomer",
+              "features/boost-notification",
+              "features/vynelcord",
+              "features/theme"
+            ]
+          },
+          {
+            "group": "Page 6 · Protection & Control",
+            "pages": [
+              "features/automod",
+              "features/subscription",
+              "features/manage-commands",
+              "features/honeypot"
+            ]
+          },
+          {
+            "group": "Page 7 · Feeds & Voice",
+            "pages": [
+              "features/social-alerts",
+              "features/tempvoice",
+              "features/rss-feeds",
+              "features/command-roles"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

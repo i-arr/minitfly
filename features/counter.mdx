@@ -1,0 +1,45 @@
+---
+title: Counter
+description: Live member and voice counts inside channel names.
+---
+
+<Frame>
+  <img src="/assets/features/counter.svg" alt="Counter" />
+</Frame>
+
+Counter keeps two special channels accurate at all times: the name of a **member counter** channel always shows the real member total, and a **voice counter** always shows who's in voice.
+
+## Setup from the panel
+
+<Steps>
+  <Step title="Open the panel">
+    `{prefix}setup` → **Page 4** → click **Counter**.
+  </Step>
+  <Step title="Add the members counter">
+    Click the members **Add** button, choose the channel (or let Vynel create one) in the form. The channel renames itself like `👥・Members : 1234`.
+  </Step>
+  <Step title="Add the voice counter">
+    Same flow with the voice **Add** button — it counts members connected in voice.
+  </Step>
+  <Step title="Custom format (optional)">
+    Set your own naming format with the command below.
+  </Step>
+  <Step title="Remove">
+    **Remove** un-registers a counter channel; the name stops updating.
+  </Step>
+</Steps>
+
+## With commands
+
+```
+{prefix}counter members set <channel> [format]   → register + optional format
+{prefix}counter members remove                   → unregister
+{prefix}counter voice set <channel> [format]     → voice side
+{prefix}counter voice remove
+```
+
+In the format, `{count}` is replaced by the live number.
+
+<Info>
+  Updates are continuous — join, leave, prune, and voice changes all reflect within moments. There is nothing to refresh manually.
+</Info>

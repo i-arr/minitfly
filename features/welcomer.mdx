@@ -1,0 +1,44 @@
+---
+title: Welcomer
+description: Greet every new member with your own welcome message.
+---
+
+<Frame>
+  <img src="/assets/features/welcome.svg" alt="Welcomer" />
+</Frame>
+
+Welcomer posts a styled welcome card whenever someone joins. You choose the channel and write the message.
+
+## Setup from the panel
+
+<Steps>
+  <Step title="Open the panel">
+    `{prefix}setup` → **Page 5** → click **Welcomer**.
+  </Step>
+  <Step title="Set the channel">
+    Click **Add**, enter the channel where welcomes should appear, **Submit**.
+  </Step>
+  <Step title="Write the message">
+    Open the message form and type your welcome text. Leave it as-is to keep the default:
+    `Welcome to {guild.name}, {user.mention}!`
+  </Step>
+  <Step title="Test">
+    Invite an alt (or just trust the preview on the panel) — the card posts with your Theme accent color.
+  </Step>
+</Steps>
+
+## Message variables
+
+| Write | Becomes |
+|---|---|
+| `{user.mention}` | @the new member |
+| `{user.name}` | their username |
+| `{guild.name}` | your server name |
+
+<Info>
+  The Welcomer card is what members see first — pair it with **Auto Role** (Page 1) so joining feels instant, and with **Logs Server** so staff notice too.
+</Info>
+
+<Warning>
+  Point Welcomer at a channel where every member can **View Channel**, otherwise the greeting posts into invisibility.
+</Warning>

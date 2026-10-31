@@ -1,0 +1,89 @@
+---
+title: How to Set Up the Bot
+description: Invite Vynel and configure your server from the Setup Panel.
+---
+
+<Frame>
+  <img src="/assets/setup-bot.svg" alt="Setting up Vynel" />
+</Frame>
+
+This guide takes you from "bot not in the server" to a fully configured server, using nothing but the bot's UI — panels, buttons, and pop-up forms.
+
+## 1. Requirements
+
+- Your Discord account must be the **server owner** or have the **Administrator** role.
+- Vynel must be a member of your server.
+
+## 2. Open the Setup Panel
+
+Run the setup command with your server's prefix:
+
+```
+{prefix}setup
+```
+
+You'll get an interactive panel: a banner, a page indicator (`Page 1/7`), four feature buttons per page, and **left / right arrows** to navigate.
+
+<Tip>
+  You can jump straight to a page: `{prefix}setup 4` opens page 4.
+</Tip>
+
+<Info>
+  The panel auto-locks after **5 minutes**. If your buttons go grey, just run `{prefix}setup` again.
+</Info>
+
+## 3. Navigate all 7 pages
+
+The panel is divided into 7 pages, each grouping 4 related features:
+
+| Page | Theme | Features |
+|---|---|---|
+| 1 | Automation & Staff | Auto Role · Auto Tag · Auto Reply · Staff Apply |
+| 2 | Moderation Roles | Logs Server · Muter · Jailer · Verificator |
+| 3 | Support & Server Tools | Ticket · Aliases · Clear Setup · Clan Manager |
+| 4 | Levels & Roles | Level Roles · Roles · Counter · Prefix |
+| 5 | Notifications & Theme | Welcomer · Boost Notification · VynelCord · Theme |
+| 6 | Protection & Control | AutoMod · Premium Sub · Manage Command · Honeypot |
+| 7 | Feeds & Voice | Social Alerts · TempVoice · RSS Feeds · Command Roles |
+
+Detailed guides for each feature live under **Setup Panel** in the sidebar.
+
+## 4. Configure a feature
+
+Every feature follows the same pattern:
+
+<Steps>
+  <Step title="Click the feature button">
+    On any page, press the feature's button (e.g. **Auto Role**). Vynel opens that feature's own control panel.
+  </Step>
+  <Step title="Press Add / Configure">
+    Most panels have an **Add** button that opens a pop-up form (modal).
+  </Step>
+  <Step title="Fill the form and submit">
+    Type the role, channel, or text the form asks for, then hit **Submit**. Vynel confirms with a message on the panel.
+  </Step>
+  <Step title="Manage entries">
+    Use **Remove** (or numbered remove buttons) on the same panel to delete entries, and the panel header shows your current configuration count.
+  </Step>
+</Steps>
+
+<Warning>
+  Only the person who opened the panel can navigate and use its buttons. Hand the panel to another admin by having them run `{prefix}setup` themselves.
+</Warning>
+
+## 5. Set the look of your server
+
+On **Page 5**, the **Theme** feature sets the accent color used by every Vynel response in your server, and **setbanner** styles the bot's profile banner. Your server's colors apply instantly to all future messages — nothing needs to be re-enabled.
+
+## 6. You're done
+
+From now on, every configured feature works automatically: new members get their auto roles, moderation actions are logged, mutes and jails use the roles you assigned. If something needs adjusting, come back to `{prefix}setup` — every setting can be changed or removed at any time.
+
+<CardGroup cols={2}>
+  <Card title="Next: how to use the bot" icon="compass" href="/how-to-use-bot">
+    Prefixes, commands, staff tools, and daily usage.
+  </Card>
+  <Card title="Setup Panel reference" icon="sliders" href="/setup/panel">
+    Every page and button explained.
+  </Card>
+</CardGroup>
